@@ -28,6 +28,9 @@
 - Download the newest version of the [AdventureWorks](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms#download-backup-files) sample database and then use [SSMS to restore the database](https://learn.microsoft.com/en-us/sql/relational-databases/backup-restore/quickstart-backup-restore-database?view=sql-server-ver16&tabs=ssms).
 
 ## 2 - Migrate to Azure SQL Database
+- Create an SQL database on [Azure](https://portal.azure.com/) and a corresponding SQL server that uses an SQL authentication system - this will be the target database. After the SQL database has been created, make sure to populate the firewall rules with the VM IP address.
+
+- Now, in order to connect the VM to the target database, download [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall).
 
 ## 3 - Backup & Restore Data
 
