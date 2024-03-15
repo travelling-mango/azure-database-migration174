@@ -30,7 +30,9 @@
 ## 2 - Migrate to Azure SQL Database
 - Create an SQL database on [Azure](https://portal.azure.com/) and a corresponding SQL server that uses an SQL authentication system - this will be the target database. After the SQL database has been created, make sure to populate the firewall rules with the VM IP address.
 
-- Now, in order to connect the VM to the target database, first download [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall). Then launch it and create a connection to the locally stored AdventureWorks sample database, as well as to the newly created SQL database on Azure. Make sure to choose *True* for the Trust Server Certificate when doing this so that the connection is encrypted and secure.
+- Now, in order to connect the VM to the target database, first download [Azure Data Studio](https://learn.microsoft.com/en-us/azure-data-studio/download-azure-data-studio?tabs=win-install%2Cwin-user-install%2Credhat-install%2Cwindows-uninstall%2Credhat-uninstall). Then launch it and create a connection to the locally stored AdventureWorks sample database, as well as to the newly created SQL database on Azure. Make sure to choose `True` for the Trust Server Certificate when doing this so that the connection is encrypted and secure.
+
+- Now that the VM is connected to both the local sample database and the target SQL database via Azure Data Studio, it is time to migrate the schema of the former database to the latter. First, make sure to install the [SQL Server Schema Compare](https://learn.microsoft.com/en-us/azure-data-studio/extensions/schema-compare-extension) extension on Azure Data Studio. Then, right click on the local server and choose `Schema Compare`. In the comparison screen that appears, make sure the AdventureWorks database appears under `Source` and that the SQL database on Azure appears under `Target`.
 
 ## 3 - Backup & Restore Data
 
