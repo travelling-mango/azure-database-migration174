@@ -19,7 +19,11 @@
 :exclamation: The second phase of the project focuses on: (4) mimicing data loss and restoring the development databse; (5) the creation of a synchronised replica of the primary database, simulating a failover to this replica, and then a failback to the primary region; and (6) enabling Microsoft Entra ID authentication for the production database and creating a DB Reader User.
 
 ## 1 - Create the Production Environment
-First, the project requires the provision of a Microsoft VM on [Azure](https://portal.azure.com/) - making sure that the image selected is Windown 11 Pro, and that the Remote Desktop Protocol (RDP) is enabled. Once the VM is created, an RDP file can be downloaded on the VM resource page on Azure and used to connect to the VM. In order to do this, make sure to download the [Microsoft Remote Desktop](https://apps.microsoft.com/detail/9wzdncrfj3ps?hl=en-US&gl=US) application first, and then double-click the RDP file and fill out the necessary admin name & password that would have been configured during the provision of the VM.
+- First, the project requires the provision of a Microsoft VM on [Azure](https://portal.azure.com/) - making sure that the image selected is Windown 11 Pro, and that the Remote Desktop Protocol (RDP) is enabled. Once the VM is created, an RDP file can be downloaded on the VM resource page on Azure and used to connect to the VM. In order to do this, make sure to download the [Microsoft Remote Desktop](https://apps.microsoft.com/detail/9wzdncrfj3ps?hl=en-US&gl=US) application first, and then double-click the RDP file and fill out the necessary admin name & password that would have been configured during the provision of the VM.
+  
+- After connecting to the VM, download Microsoft's [SQL Server Developer](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) and [SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16) as these will be necessary for the subsequent tasks.
+
+- 
 
 
 
