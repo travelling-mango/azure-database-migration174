@@ -39,6 +39,8 @@
 - In order to validate the migration success, inspect the data and schema by comparing the top and bottom 1000 results between the tables.
 
 ## 3 - Backup & Restore Data
+- 
+
 
 ## 4 - Disaster Recovery Simulation
 
